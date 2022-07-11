@@ -391,11 +391,11 @@ int main(void)
   uint8_t buf[12];
   //buf[0] = 0x81;
   //buf[1] = 10;
-  buf[0] = 0x81;
+  buf[0] = 0x81;  //blue
  800050a:	2381      	movs	r3, #129	; 0x81
  800050c:	703b      	strb	r3, [r7, #0]
-  buf[1] = 15;
- 800050e:	230f      	movs	r3, #15
+  buf[1] = 0;
+ 800050e:	2300      	movs	r3, #0
  8000510:	707b      	strb	r3, [r7, #1]
   buf[2] = 0x82;
  8000512:	2382      	movs	r3, #130	; 0x82
@@ -406,10 +406,10 @@ int main(void)
   buf[4] = 0x83;
  800051a:	2383      	movs	r3, #131	; 0x83
  800051c:	713b      	strb	r3, [r7, #4]
-  buf[5] = 15;
- 800051e:	230f      	movs	r3, #15
+  buf[5] = 0;
+ 800051e:	2300      	movs	r3, #0
  8000520:	717b      	strb	r3, [r7, #5]
-  buf[6] = 0x84;
+  buf[6] = 0x84; //enable
  8000522:	2384      	movs	r3, #132	; 0x84
  8000524:	71bb      	strb	r3, [r7, #6]
   buf[7] = 3;

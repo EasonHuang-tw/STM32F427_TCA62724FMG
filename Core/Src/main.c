@@ -94,13 +94,13 @@ int main(void)
   uint8_t buf[12];
   //buf[0] = 0x81;
   //buf[1] = 10;
-  buf[0] = 0x81;
+  buf[0] = 0x81;  //blue
   buf[1] = 15;
-  buf[2] = 0x82;
+  buf[2] = 0x82;  //green
   buf[3] = 15;
-  buf[4] = 0x83;
+  buf[4] = 0x83;  //red
   buf[5] = 15;
-  buf[6] = 0x84;
+  buf[6] = 0x84; //enable
   buf[7] = 3;
   /* USER CODE END 2 */
 
